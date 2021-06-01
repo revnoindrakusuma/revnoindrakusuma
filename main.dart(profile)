@@ -1,0 +1,29 @@
+import 'package:flutter/material.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'First App',
+      home: Scaffold(
+          appBar: AppBar(
+            title: Text('Profil'),
+            backgroundColor: Colors.black,
+          ),
+          body:  Column(
+              children: <Widget>[
+                Image.network('https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2RmODZjM2RjZTg5ZDI2ZGQzZWI5NWU4YzI1MDBhMTIyLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D'),
+                Text(
+                  'Elon Reeve Musk FRS',
+                  style: TextStyle(fontSize: 24, fontFamily: "Serif", height: 2.0),
+                ),
+                Text('   lahir di Afrika Selatan, 28 Juni 1971; umur 49 tahun) adalah tokoh bisnis, penemu, dan industrialis dari Amerika Serikat. Ia merupakan pendiri, CTO, dan CEO SpaceX, CEO dan arsitek produksi Tesla, pendiri The Boring Company, dan pendiri Neuralink. Setelah mengikuti kuliah perdagangan di Queens School of Business selama dua tahun, Musk mendapatkan gelar sarjana ekonomi dari the Wharton School of the University of Pennsylvania')
+              ]
+          )
+
+      ),
+    );
+  }
+}
